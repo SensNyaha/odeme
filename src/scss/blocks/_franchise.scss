@@ -1,0 +1,145 @@
+.franchise {
+    margin-top: 120px;
+
+    font-family: 'Graphik LCG';
+
+    &__content {
+        margin-top: 80px;
+
+        min-height: 544px;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    &__list {
+        width: 592px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 17px;
+    }
+    &__num {
+        position: relative;
+        top: -8px;
+
+        font-family: 'Berlingske Serif';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+
+        border-bottom: 2.5px solid black;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    &__picture {
+        width: 520px;
+        height: 544px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 10px solid #BDBDBD;
+        border-radius: 4px;
+    }
+    &__sale {
+        margin-top: 60px;
+        padding: 30px 50px;
+
+        font-family: 'Berlingske Serif';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+
+        background: #FFFFFF;
+        border: 10px solid #FFCF10;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .franchise {
+        &__content {
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .franchise {
+        margin-top: 96px;
+        &__content {
+            margin-top: 40px;
+
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__list {
+            width: 100%;
+
+            gap:25px;
+        }
+        &__picture {
+            width: 100%;
+            height: 500px;
+        }
+        &__sale {
+            margin-top: 40px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .franchise {
+        &__picture {
+            height: 450px;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .franchise {
+        margin-top: 56px;
+        &__content {
+            margin-top: 30px;
+
+            gap: 30px;
+        }
+        &__item {
+            flex-direction: column;
+            gap: 2px;
+        }
+        &__num {
+            font-size: 40px;
+        }
+        &__text {
+            font-size: 16px;
+
+            text-align: justify;
+        }
+        &__picture {
+            height: 330px;
+        }
+        &__img {
+            width: 238px;
+            max-width: 100%;
+        
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__sale {
+            margin-top: 30px;
+
+            padding: 30px 8px;
+
+            font-size: 20px;
+        }
+    }
+}
